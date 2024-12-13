@@ -176,58 +176,15 @@
             </div>
         </div>
 
-        <section>
-            <h4 class="text-primary">Area</h4>
-            <div class="kec-container">
-                <div class="kec d-inline-flex">
-                    <div style="width: 300px;" class="me-2">
-                        <div class="card p-3 mb-4" style="background: #FFC94A;border-radius: 25px;">
-                            <div class="row">
-                                <div class="col-5">
-                                    <img src="https://i.pinimg.com/originals/80/4e/a6/804ea6584696de47e2cc87cdd41155ac.gif"
-                                        alt="foto" width="100%" style="border-radius: 20px;">
-                                </div>
-                                <div class="col-7">
-                                    <h5 class="card-title">Tandun</h5>
-                                    <p>100 ton</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="width: 300px;" class="me-2">
-                        <div class="card p-3 mb-4" style="background: #FFC94A;border-radius: 25px;">
-                            <div class="row">
-                                <div class="col-5">
-                                    <img src="https://i.pinimg.com/originals/80/4e/a6/804ea6584696de47e2cc87cdd41155ac.gif"
-                                        alt="foto" width="100%" style="border-radius: 20px;">
-                                </div>
-                                <div class="col-7">
-                                    <h5 class="card-title">Kabun</h5>
-                                    <p>98 ton</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="width: 300px;" class="me-2">
-                        <div class="card p-3 mb-4" style="background: #FFC94A;border-radius: 25px;">
-                            <div class="row">
-                                <div class="col-5">
-                                    <img src="https://i.pinimg.com/originals/80/4e/a6/804ea6584696de47e2cc87cdd41155ac.gif"
-                                        alt="foto" width="100%" style="border-radius: 20px;">
-                                </div>
-                                <div class="col-7">
-                                    <h5 class="card-title">Rambah</h5>
-                                    <p>120 ton</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+      
 
         <section>
-            <h4 class="text-primary">Transaksi Terbaru</h4>
+            <div class="d-flex justify-content-between align-items-center">
+                <h4 class="text-primary">Transaksi</h4>
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Tambah
+                </button>
+            </div>
             <div class="row p-3">
                 <!--data -->
                 <div class="card p-3 mb-2" style="border-radius: 25px;">
@@ -237,10 +194,10 @@
                                 alt="foto" width="100%" style="border-radius: 20px;">
                         </div>
                         <div class="col-9">
-                            <h5 class="card-title">Supardi Nugraha</h5>
+                            <h5 class="card-title">Supriadi</h5>
                             <div class="d-flex mt-4">
                                 <p>100 ton</p>
-                                <p class="text-secondary ms-auto">12 Desember 2024</p>
+                                <p class="text-secondary ms-auto">13 Desember 2024</p>
 
                             </div>
                         </div>
@@ -254,7 +211,7 @@
                                 alt="foto" width="100%" style="border-radius: 20px;">
                         </div>
                         <div class="col-9">
-                            <h5 class="card-title">Joko Suprapto</h5>
+                            <h5 class="card-title">Ilham Fauzi</h5>
                             <div class="d-flex mt-4">
                                 <p>98 ton</p>
                                 <p class="text-secondary ms-auto">12 Desember 2024</p>
@@ -263,42 +220,53 @@
                         </div>
                     </div>
                 </div>
-                <!--data -->
-                <div class="card p-3 mb-2" style="border-radius: 25px;">
-                    <div class="row">
-                        <div class="col-3">
-                            <img src="https://i.pinimg.com/originals/80/4e/a6/804ea6584696de47e2cc87cdd41155ac.gif"
-                                alt="foto" width="100%" style="border-radius: 20px;">
-                        </div>
-                        <div class="col-9">
-                            <h5 class="card-title">Widjaja Kusuma</h5>
-                            <div class="d-flex mt-4">
-                                <p>100 ton</p>
-                                <p class="text-secondary ms-auto">12 Desember 2024</p>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--data -->
-                <div class="card p-3 mb-2" style="border-radius: 25px;">
-                    <div class="row">
-                        <div class="col-3">
-                            <img src="https://i.pinimg.com/originals/80/4e/a6/804ea6584696de47e2cc87cdd41155ac.gif" alt="foto"
-                                width="100%" style="border-radius: 20px;">
-                        </div>
-                        <div class="col-9">
-                            <h5 class="card-title">Darmawan</h5>
-                            <div class="d-flex mt-4">
-                                <p>100 ton</p>
-                                <p class="text-secondary ms-auto">12 Desember 2024</p>
-                
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              
             </div>
         </section>
+    </div>
+
+    <div class="modal modal-sm fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Tambah Transaksi</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Mitra</label>
+                    <select class="form-control">
+                        <option value="">Pilih Mitra</option>
+                        <option>Ilham Fauzi</option>
+                        <option>Supriadi</option>
+                        <option>Dede Handoco</option>
+                        <option>Ramadhani</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFileMultiple" class="form-label">Berat (Ton)</label>
+                    <input class="form-control" type="text" value="0">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFileMultiple" class="form-label">Jumlah</label>
+                    <input class="form-control" type="text" value="0">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFileMultiple" class="form-label">Harga</label>
+                    <input class="form-control" type="text" value="0">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFileDisabled" class="form-label">Tanggal</label>
+                    <input class="form-control" type="date" id="formFileDisabled">
+                  </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Bottom Navigation for Mobile -->
