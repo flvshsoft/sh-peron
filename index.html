@@ -33,7 +33,7 @@
 
         .navbar,
         .sidebar {
-            background-color: #4e73df;
+            background-color: #FFC94A;
         }
 
         .navbar button,
@@ -145,11 +145,14 @@
 <body>
 
     <!-- Sidebar for Desktop -->
-    <div class="sidebar d-none">
-        <button class="btn btn-primary mb-3">Home</button>
-        <button class="btn btn-primary mb-3">Schedule</button>
-        <button class="btn btn-primary mb-3">Notifications</button>
-        <button class="btn btn-primary mb-3">Profile</button>
+    <div class="sidebar d-flex flex-column d-none d-md-block">
+        <h2 class="text-center py-3">Menu</h2>
+        <nav class="nav flex-column">
+            <a class="nav-link text-black active" href="index.html">Dashboard</a>
+            <a class="nav-link text-black" href="transaksi.html">Transaksi</a>
+            <a class="nav-link text-black" href="hutang.html">Payable</a>
+            <a class="nav-link text-black" href="index.html">Logout</a>
+        </nav>
     </div>
 
     <div class="content">
@@ -284,15 +287,15 @@
                 <div class="card p-3 mb-2" style="border-radius: 25px;">
                     <div class="row">
                         <div class="col-3">
-                            <img src="https://i.pinimg.com/originals/80/4e/a6/804ea6584696de47e2cc87cdd41155ac.gif" alt="foto"
-                                width="100%" style="border-radius: 20px;">
+                            <img src="https://i.pinimg.com/originals/80/4e/a6/804ea6584696de47e2cc87cdd41155ac.gif"
+                                alt="foto" width="100%" style="border-radius: 20px;">
                         </div>
                         <div class="col-9">
                             <h5 class="card-title">Darmawan</h5>
                             <div class="d-flex mt-4">
                                 <p>100 ton</p>
                                 <p class="text-secondary ms-auto">12 Desember 2024</p>
-                
+
                             </div>
                         </div>
                     </div>

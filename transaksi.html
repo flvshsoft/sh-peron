@@ -33,7 +33,7 @@
 
         .navbar,
         .sidebar {
-            background-color: #4e73df;
+            background-color: #FFC94A;
         }
 
         .navbar button,
@@ -145,11 +145,14 @@
 <body>
 
     <!-- Sidebar for Desktop -->
-    <div class="sidebar d-none">
-        <button class="btn btn-primary mb-3">Home</button>
-        <button class="btn btn-primary mb-3">Schedule</button>
-        <button class="btn btn-primary mb-3">Notifications</button>
-        <button class="btn btn-primary mb-3">Profile</button>
+    <div class="sidebar d-flex flex-column d-none d-md-block">
+        <h2 class="text-center py-3">Menu</h2>
+        <nav class="nav flex-column">
+            <a class="nav-link text-black" href="index.html">Dashboard</a>
+            <a class="nav-link text-black" href="transaksi.html">Transaksi</a>
+            <a class="nav-link text-black" href="hutang.html">Payable</a>
+            <a class="nav-link text-black" href="index.html">Logout</a>
+        </nav>
     </div>
 
     <div class="content">
@@ -157,116 +160,354 @@
             <i class="fab fa-dashcube" style="color:#FFC94A"></i>
             <!-- PeronApp -->
         </h1>
-        <h1 class="text-start mt-1 text-primary">
-            <span class="thin">Hello</span>
-            <span class="bold">Admin</span>
+        <h1 class="text-start mt-1 text-primary d-flex">
+            <span class="thin">Transaksi</span>
+            <button type="button" class="btn btn-warning ms-auto" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
+                Tambah
+            </button>
         </h1>
 
-        <!-- Example content section -->
-        <div class="card p-3 mb-4" style="background: #FFC94A;border-radius: 25px;">
-            <div class="row">
-                <div class="col-7">
-                    <h5 class="card-title mt-3">PeronApp</h5>
-                    <p class="card-text">adalah aplikasi manajemen distribusi sawit di daerah Rokan Hulu, Riau.</p>
-                </div>
-                <div class="col-5">
-                    <img src="https://i.pinimg.com/originals/a3/98/59/a39859d44ad68f19326456c71900eaf6.gif" alt="foto"
-                        width="100%" style="border-radius: 50px;">
-                </div>
-            </div>
-        </div>
-
-      
-
         <section>
-            <div class="d-flex justify-content-between align-items-center">
-                <h4 class="text-primary">Transaksi</h4>
-                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                  Tambah
-                </button>
+            <div class="kec-container">
+                <div class="kec d-inline-flex">
+                    <!-- tanggal -->
+                    <div style="width: 150px;" class="me-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card p-3 mb-4" style="background: #FFC94A;border-radius: 10px;">
+                                <div class="text-center">
+                                    01/12/2024
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- tanggal -->
+                    <div style="width: 150px;" class="me-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card p-3 mb-4" style="background: #FFC94A;border-radius: 10px;">
+                                <div class="text-center">
+                                    02/12/2024
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- tanggal -->
+                    <div style="width: 150px;" class="me-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card p-3 mb-4" style="background: #FFC94A;border-radius: 10px;">
+                                <div class="text-center">
+                                    03/12/2024
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- tanggal -->
+                    <div style="width: 150px;" class="me-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card p-3 mb-4" style="background: #FFC94A;border-radius: 10px;">
+                                <div class="text-center">
+                                    04/12/2024
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- tanggal -->
+                    <div style="width: 150px;" class="me-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card p-3 mb-4" style="background: #FFC94A;border-radius: 10px;">
+                                <div class="text-center">
+                                    05/12/2024
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- tanggal -->
+                    <div style="width: 150px;" class="me-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card p-3 mb-4" style="background: #FFC94A;border-radius: 10px;">
+                                <div class="text-center">
+                                    06/12/2024
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- tanggal -->
+                    <div style="width: 150px;" class="me-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card p-3 mb-4" style="background: #FFC94A;border-radius: 10px;">
+                                <div class="text-center">
+                                    07/12/2024
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="row p-3">
+                <h4>Omaku Sayang</h4>
                 <!--data -->
                 <div class="card p-3 mb-2" style="border-radius: 25px;">
                     <div class="row">
-                        <div class="col-3">
+                        <div class="col-1">
                             <img src="https://i.pinimg.com/originals/80/4e/a6/804ea6584696de47e2cc87cdd41155ac.gif"
                                 alt="foto" width="100%" style="border-radius: 20px;">
                         </div>
-                        <div class="col-9">
-                            <h5 class="card-title">Supriadi</h5>
-                            <div class="d-flex mt-4">
-                                <p>100 ton</p>
-                                <p class="text-secondary ms-auto">13 Desember 2024</p>
-
+                        <div class="col-11">
+                            <div class="row">
+                                <div class="col-2">
+                                    <label for="" class="text-secondary">No Polisi</label>
+                                    <h5>BM 9990 UO</h5>
+                                </div>
+                                <div class="col-2">
+                                    <label for="" class="text-secondary">Nama Supir</label>
+                                    <h5>Robby</h5>
+                                </div>
+                                <div class="col-2">
+                                    <label for="" class="text-secondary">Jumlah TBS</label>
+                                    <h5>30.714</h5>
+                                </div>
+                                <div class="col-1">
+                                    <label for="" class="text-secondary">Harga</label>
+                                    <h5>2.610</h5>
+                                </div>
+                                <div class="col-1">
+                                    <label for="" class="text-secondary">Kredit/Debit</label>
+                                    <h5>0</h5>
+                                </div>
+                                <div class="col-2">
+                                    <label for="" class="text-secondary">Saldo</label>
+                                    <h5>850.860.920</h5>
+                                </div>
+                                <div class="col-2">
+                                    <label for="" class="text-secondary">Transfer</label>
+                                    <h5>80.613.540</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <!--data -->
                 <div class="card p-3 mb-2" style="border-radius: 25px;">
                     <div class="row">
-                        <div class="col-3">
+                        <div class="col-1">
                             <img src="https://i.pinimg.com/originals/80/4e/a6/804ea6584696de47e2cc87cdd41155ac.gif"
                                 alt="foto" width="100%" style="border-radius: 20px;">
                         </div>
-                        <div class="col-9">
-                            <h5 class="card-title">Ilham Fauzi</h5>
-                            <div class="d-flex mt-4">
-                                <p>98 ton</p>
-                                <p class="text-secondary ms-auto">12 Desember 2024</p>
-
+                        <div class="col-11">
+                            <div class="row">
+                                <div class="col-2">
+                                    <label for="" class="text-secondary">No Polisi</label>
+                                    <h5>B 9541 TYX</h5>
+                                </div>
+                                <div class="col-2">
+                                    <label for="" class="text-secondary">Nama Supir</label>
+                                    <h5>Rizki</h5>
+                                </div>
+                                <div class="col-2">
+                                    <label for="" class="text-secondary">Jumlah TBS</label>
+                                    <h5>27.370</h5>
+                                </div>
+                                <div class="col-1">
+                                    <label for="" class="text-secondary">Harga</label>
+                                    <h5>2.610</h5>
+                                </div>
+                                <div class="col-1">
+                                    <label for="" class="text-secondary">Kredit/Debit</label>
+                                    <h5>0</h5>
+                                </div>
+                                <div class="col-2">
+                                    <label for="" class="text-secondary">Saldo</label>
+                                    <h5>850.860.920</h5>
+                                </div>
+                                <div class="col-2">
+                                    <label for="" class="text-secondary">Transfer</label>
+                                    <h5>71.435.700</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-              
+
+                <!--data -->
+                <div class="card p-3 mb-2" style="border-radius: 25px;">
+                    <div class="row">
+                        <div class="col-1">
+                            <img src="https://i.pinimg.com/originals/80/4e/a6/804ea6584696de47e2cc87cdd41155ac.gif"
+                                alt="foto" width="100%" style="border-radius: 20px;">
+                        </div>
+                        <div class="col-11">
+                            <div class="row">
+                                <div class="col-2">
+                                    <label for="" class="text-secondary">No Polisi</label>
+                                    <h5>BM 8671 UO</h5>
+                                </div>
+                                <div class="col-2">
+                                    <label for="" class="text-secondary">Nama Supir</label>
+                                    <h5>Ayub</h5>
+                                </div>
+                                <div class="col-2">
+                                    <label for="" class="text-secondary">Jumlah TBS</label>
+                                    <h5>26.628</h5>
+                                </div>
+                                <div class="col-1">
+                                    <label for="" class="text-secondary">Harga</label>
+                                    <h5>2.610</h5>
+                                </div>
+                                <div class="col-1">
+                                    <label for="" class="text-secondary">Kredit/Debit</label>
+                                    <h5>0</h5>
+                                </div>
+                                <div class="col-2">
+                                    <label for="" class="text-secondary">Saldo</label>
+                                    <h5>850.860.920</h5>
+                                </div>
+                                <div class="col-2">
+                                    <label for="" class="text-secondary">Transfer</label>
+                                    <h5>69.499.080</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4>Muti Sinaga</h4>
+                <!--data -->
+                <div class="card p-3 mb-2" style="border-radius: 25px;">
+                    <div class="row">
+                        <div class="col-1">
+                            <img src="https://i.pinimg.com/originals/80/4e/a6/804ea6584696de47e2cc87cdd41155ac.gif"
+                                alt="foto" width="100%" style="border-radius: 20px;">
+                        </div>
+                        <div class="col-11">
+                            <div class="row">
+                                <div class="col-2">
+                                    <label for="" class="text-secondary">No Polisi</label>
+                                    <h5>BM 8389 MU</h5>
+                                </div>
+                                <div class="col-2">
+                                    <label for="" class="text-secondary">Nama Supir</label>
+                                    <h5>Hermanto</h5>
+                                </div>
+                                <div class="col-2">
+                                    <label for="" class="text-secondary">Jumlah TBS</label>
+                                    <h5>7.704</h5>
+                                </div>
+                                <div class="col-1">
+                                    <label for="" class="text-secondary">Harga</label>
+                                    <h5>2.610</h5>
+                                </div>
+                                <div class="col-1">
+                                    <label for="" class="text-secondary">Kredit/Debit</label>
+                                    <h5>0</h5>
+                                </div>
+                                <div class="col-2">
+                                    <label for="" class="text-secondary">Saldo</label>
+                                    <h5>850.860.920</h5>
+                                </div>
+                                <div class="col-2">
+                                    <label for="" class="text-secondary">Transfer</label>
+                                    <h5>19.167.440</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--data -->
+                <div class="card p-3 mb-2" style="border-radius: 25px;">
+                    <div class="row">
+                        <div class="col-1">
+                            <img src="https://i.pinimg.com/originals/80/4e/a6/804ea6584696de47e2cc87cdd41155ac.gif"
+                                alt="foto" width="100%" style="border-radius: 20px;">
+                        </div>
+                        <div class="col-11">
+                            <div class="row">
+                                <div class="col-2">
+                                    <label for="" class="text-secondary">No Polisi</label>
+                                    <h5>BM 9933 UO</h5>
+                                </div>
+                                <div class="col-2">
+                                    <label for="" class="text-secondary">Nama Supir</label>
+                                    <h5>Halomoan</h5>
+                                </div>
+                                <div class="col-2">
+                                    <label for="" class="text-secondary">Jumlah TBS</label>
+                                    <h5>30.714</h5>
+                                </div>
+                                <div class="col-1">
+                                    <label for="" class="text-secondary">Harga</label>
+                                    <h5>2.610</h5>
+                                </div>
+                                <div class="col-1">
+                                    <label for="" class="text-secondary">Kredit/Debit</label>
+                                    <h5>0</h5>
+                                </div>
+                                <div class="col-2">
+                                    <label for="" class="text-secondary">Saldo</label>
+                                    <h5>850.860.920</h5>
+                                </div>
+                                <div class="col-2">
+                                    <label for="" class="text-secondary">Transfer</label>
+                                    <h5>80.613.540</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
     </div>
 
-    <div class="modal modal-sm fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal modal-sm fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="staticBackdropLabel">Tambah Transaksi</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Tambah Transaksi</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label">Mitra</label>
+                        <select class="form-control">
+                            <option value="">Pilih Mitra</option>
+                            <option>Ilham Fauzi</option>
+                            <option>Supriadi</option>
+                            <option>Dede Handoco</option>
+                            <option>Ramadhani</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="formFileMultiple" class="form-label">Berat (Ton)</label>
+                        <input class="form-control" type="text" value="0">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formFileMultiple" class="form-label">Jumlah</label>
+                        <input class="form-control" type="text" value="0">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formFileMultiple" class="form-label">Harga</label>
+                        <input class="form-control" type="text" value="0">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formFileDisabled" class="form-label">Tanggal</label>
+                        <input class="form-control" type="date" id="formFileDisabled">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                </div>
             </div>
-            <div class="modal-body">
-                <div class="mb-3">
-                    <label for="formFile" class="form-label">Mitra</label>
-                    <select class="form-control">
-                        <option value="">Pilih Mitra</option>
-                        <option>Ilham Fauzi</option>
-                        <option>Supriadi</option>
-                        <option>Dede Handoco</option>
-                        <option>Ramadhani</option>
-                    </select>
-                  </div>
-                  <div class="mb-3">
-                    <label for="formFileMultiple" class="form-label">Berat (Ton)</label>
-                    <input class="form-control" type="text" value="0">
-                  </div>
-                  <div class="mb-3">
-                    <label for="formFileMultiple" class="form-label">Jumlah</label>
-                    <input class="form-control" type="text" value="0">
-                  </div>
-                  <div class="mb-3">
-                    <label for="formFileMultiple" class="form-label">Harga</label>
-                    <input class="form-control" type="text" value="0">
-                  </div>
-                  <div class="mb-3">
-                    <label for="formFileDisabled" class="form-label">Tanggal</label>
-                    <input class="form-control" type="date" id="formFileDisabled">
-                  </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Understood</button>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
     </div>
 
     <!-- Bottom Navigation for Mobile -->
