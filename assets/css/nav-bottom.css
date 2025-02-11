@@ -86,7 +86,7 @@
       justify-content: end;
       gap: 10px;
     }
-    #card-detail{
+    /* #card-detail{
       margin-right: 20px;
     }
     #tambah-mobile-btn{
@@ -95,7 +95,7 @@
     
     #modal-tambah{
       margin-right: 20px;
-    }
+    } */
 
     #welcome-name{
       font-weight: bold;
